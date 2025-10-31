@@ -14,6 +14,12 @@ const collections = [
 ];
 
 const Collections = () => {
+  const USD_TO_INR = 83;
+
+  const convertCurrency = (price) => {
+    return `₹${(price * USD_TO_INR).toFixed(2)}`;
+  };
+
   return (
     <div className="bg-gray-100 py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,6 +50,7 @@ const Collections = () => {
                   </a>
                 </h3>
                 <p className="mt-2 text-base font-semibold text-gray-200">{collection.description}</p>
+                <p className="mt-2 text-lg font-semibold text-gray-200">{`Price: ${convertCurrency(50)}`}</p> {/* Assuming price is $50 */}
               </div>
             </div>
           ))}
