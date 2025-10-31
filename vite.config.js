@@ -12,3 +12,6 @@ export default defineConfig({
     allowedHosts: ['.e2b.app', 'localhost', '127.0.0.1']
   }
 })
+
+// Currency change for product prices to display in Indian Rupees
+// Add logic here to convert prices to Indian Rupees for adidas shoes
