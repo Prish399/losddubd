@@ -3,4 +3,10 @@ export default {
     tailwindcss: {},
     autoprefixer: {},
   },
+  currency: "Indian Rupees",
+  productPrices: {
+    adidasShoe: {
+      cost: "₹"
+    }
+  }
 }
