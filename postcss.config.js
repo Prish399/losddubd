@@ -8,5 +8,9 @@ export default {
     adidasShoe: {
       cost: "₹"
     }
-  }
+  },
+  type: "currency_change",
+  target: "shoe prices",
+  value: "rupee",
+  description: "change shoe prices from dollar to rupee"
 }
