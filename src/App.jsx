@@ -5,6 +5,9 @@ import Collections from './components/Collections';
 import Footer from './components/Footer';
 
 function App() {
+  // Conversion rate from USD to INR
+  const conversionRate = 83;
+
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
       <Header />
@@ -16,6 +19,11 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+// Function to convert price from USD to INR
+function convertCurrency(price) {
+  return price * conversionRate;
 }
 
 export default App;
